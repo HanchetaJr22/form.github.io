@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        /* Set the background GIF */
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover; /* Ensure the GIF covers the entire screen */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the form */
+        .form-container {
+            background-color: lightblue; /* Semi-transparent white for better readability */
+            border-radius: 10px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            padding: 50px;
+            max-width: 500px;
+            width: 50%;
+            height: 50  ;
+            text-align: center; /* Center text inside */
+            backdrop-filter: blur(5px); /* Adds a slight blur to the background behind the form */
+        }
+
+        /* Form heading */
+        .form-container h2 {
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Form input fields and labels */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            color: #000000;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+        }
+
+        /* Change input focus border color */
+        .form-group input:focus {
+            border-color: #0078f8;
+            outline: none;
+        }
+
+        /* Buttons container */
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Submit button */
+        .form-buttons button[type="submit"] {
+            background-color: #ccc;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        /* Reset button */
+        .form-buttons button[type="reset"] {
+            background-color: #ccc;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 48%;
+        }
+
+        /* Button hover effects */
+        .form-buttons button:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive design for mobile devices */
+        @media screen and (max-width: 500px) {
+            .form-container {
+                padding: 20px;
+                width: 90%;
+            }
+            .form-buttons button {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+        </div>
+        <div class="form-group">
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <div class="form-group">
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-buttons">
+            <button type="submit">Send Your Info</button>
+            <button type="reset">Clear the Form</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
